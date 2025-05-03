@@ -6,20 +6,20 @@
     <title>HomePage</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
+<body>
 <!-- Header starts here -->
-<header class="flex  items-center bg-white p-4 justify-around">
+<header class="sticky top-0 z-50 bg-white p-4 flex items-center justify-around">
 
     <!-- top logo  -->
      <div>
-         <img src="/src/assets/images/megavizLogo.png" alt="megaviz logo" class="w-40 h-10">
+         <img src="/src/assets/images/megavizLogo.png" alt="megaviz logo" class="sm:w-15 sm:h-5 md:w-24 md:h-7 lg:w-40 lg:h-10 ">
      </div>
     <!-- top logo end  -->
 
 
     <!-- Navbar starts here -->
-    <nav>
+    <nav class="">
         <ul class="flex ">
             <li class="mx-4"><a href="#">Home</a></li>
             <li class="mx-4"><a href="#">Capabilities</a></li>
@@ -56,22 +56,130 @@
 <!-- Hero section ends here -->
 
 <!-- top clients section starts -->
-<section class="bg-white py-10">
+<section class="bg-white py-20 ">
     <div class="container mx-auto text-center">
         <!-- <h2 class="text-3xl font-bold mb-6">Our Top Clients</h2> -->
-        <div class="grid grid-cols-4 gap-4">
-            <div class="flex justify-center items-center"><img src="/src/assets/images/clients/client1.png" alt="Client 1" class="w-32 h-32"></div>
-            <div class="flex justify-center items-center"><img src="/src/assets/images/clients/client2.png" alt="Client 2" class="w-32 h-32"></div>
-            <div class="flex justify-center items-center"><img src="/src/assets/images/clients/client3.png" alt="Client 3" class="w-32 h-32"></div>
-            <div class="flex justify-center items-center"><img src="/src/assets/images/clients/client4.png" alt="Client 4" class="w-32 h-32"></div>
+        <div class="grid grid-cols-5 gap-4">
+            <div class="flex justify-center items-center">
+                <img src="/src/assets/images/clients/client1.png" alt="Client 1" class="w-20 h-20">
+            </div>
+            <div class="flex justify-center items-center">
+                <img src="/src/assets/images/clients/client2.png" alt="Client 2" class="w-20 h-20">
+            </div>
+            <div class="flex justify-center items-center">
+                <img src="/src/assets/images/clients/client3.png" alt="Client 3" class="w-20 h-20">
+            </div>
+            <div class="flex justify-center items-center">
+                <img src="/src/assets/images/clients/client4.png" alt="Client 4" class="w-20 h-20">
+            </div>
+            <div class="flex justify-center items-center">
+                <img src="/src/assets/images/clients/client4.png" alt="Client 4" class="w-20 h-20">
+            </div>
         </div>
     </div>
+</section>
 <!-- top clients section end -->
 
 
+
 <!-- Company facts section start -->
-   
+<section class="bg-white py-16 px-6 ">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
+      
+      <!-- Left Heading -->
+      <div class="md:w-1/2">
+        <h2 class="text-5xl font-bold text-[#0F2B59] leading-snug">
+          <span class="text-[#B41F1F]">Facts</span> about our<br /> company
+        </h2>
+      </div>
+  
+      <!-- Right stats -->
+
+      <div class="md:w-1/2 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        
+        
+        <div>
+          <div class="flex justify-center mb-2">
+            <img src="/path/to/graph-icon.svg" alt="Graph Icon" class="w-6 h-6" />
+          </div>
+          <h3 class="text-5xl font-bold text-black">35%+</h3>
+          <p class="text-[#B41F1F] text-lg font-medium mt-1">Performance &<br />Productivity Improvement</p>
+        </div>
+  
+        
+        <div>
+          <div class="flex justify-center mb-2">
+            <img src="/path/to/bulb-icon.svg" alt="Bulb Icon" class="w-6 h-6" />
+          </div>
+          <h3 class="text-5xl font-bold text-black">60%+</h3>
+          <p class="text-[#B41F1F] text-lg font-medium mt-1">Increase in Digital<br />Adoption</p>
+        </div>
+  
+        
+        <div>
+          <div class="flex justify-center mb-2">
+            <img src="/path/to/sync-icon.svg" alt="Sync Icon" class="w-6 h-6" />
+          </div>
+          <h3 class="text-5xl font-bold text-black">2x</h3>
+          <p class="text-[#B41F1F] text-lg font-medium mt-1">Speed to<br />Market</p>
+        </div>
+    </div>
+</div>
+<p class="text-end mr-10 text-black text-sm mt-6  ">
+  *Stats based on the growth delivered to our clients
+</p>
+
+    <!-- bottom note -->     
+</section>
 <!-- Company facts section end-->
+
+
+<!-- About company section start -->
+
+<section class="bg-white py-16 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+      
+      <!-- Left Image -->
+      <div class="w-full md:w-1/2">
+        <img 
+          src="/path/to/your-image.jpg" 
+          alt="Team Image" 
+          class="rounded-[30px] w-full h-auto object-cover"
+        />
+      </div>
+  
+      <!-- Right Content -->
+      <div class="w-full md:w-1/2">
+        <p class="text-red-600 font-medium mb-2">About our company</p>
+        <h2 class="text-5xl font-bold text-[#0F2B59] leading-snug mb-4">
+          We're the world's best <br />
+          <span class="text-red-600">IT solutions</span> company
+        </h2>
+  
+        <div class="bg-white shadow-md rounded-2xl p-6 text-gray-700">
+          <p class="mb-4">
+            At APRN, we believe in fostering a work environment that feels more like family. A Culture of Belonging means that every member of our team feels valued, respected, and supported. We have been helping businesses with their IT needs since 2010. We are provide fast, reliable, outsourced onsite and remote IT support services.
+          </p>
+          <p class="mb-6">
+            We celebrate our differences through our Employee Resource Groups and learn from each other through mentorship programs. We also enjoy regular team-building activities and social events to build strong bonds.
+          </p>
+          <a href="#" class="inline-flex items-center bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-5 rounded-full transition">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- About company section End -->
+
+
+
+
+<!-- Service section start -->
+<!-- Service section End -->
+
+
+
 
 
 <!-- Footer Starts -->
@@ -79,7 +187,8 @@
     <div>
         
     </div>
-</footer> -->
+</footer>
 <!-- Footer End -->
+
 </body>
 </html>
