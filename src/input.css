@@ -7,8 +7,19 @@ body {
     font-family: 'Inter', sans-serif;
   }
   
-  .heading {
+.heading {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
   }
-  
+
+
+/* css of top bg image
+
+position: absolute;
+width: 1512.54px;
+height: 548px;
+left: 1761.54px;
+bottom: -270px;
+
+background: url(.jpg);
+transform: rotate(-180deg); */
