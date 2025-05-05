@@ -42,19 +42,43 @@
 
 
 <!-- Hero section starts here -->
-<section class="bg-gray-100 h-screen flex items-center justify-center" style="background-image: url('/src/assets/images/demoHero.png'); background-size: cover; background-position: center;">
-    <div class="text-center">
-        <h2 class="text-white text-2xl font-bold mb-4">Automate. Integrate. Dominate.</h2>
-        <h1 class="text-white text-5xl font-bold mb-4">Future of</h1>
-        <h1 class="text-white text-5xl font-bold mb-4">Modern IT Technology is here</h1>
-        <p class="text-white text-base ">We are your one-for-all Business and Technology Consultants, offering customised, secure</p>
-        <p class="text-white text-base mb-8">solution to suit your project needs.</p>
-        <div class="flex justify-center space-x-4">
-            <button class=" bg-red-600 text-white text-sm  px-6 rounded-3xl ">Get in Touch now</button>
-            <button class="border border-white p-3 text-sm px-6 rounded-3xl text-white">Any Query?</button>
-        </div>
+ 
+<section class="relative h-screen flex items-center justify-center bg-white overflow-hidden">
+  <!-- Top background image -->
+  <img src="/src/assets/images/main_Img/heroBgTop.png" alt="Top Background" class="absolute top-0 left-0 w-full object-cover z-0">
+
+  <!-- Bottom background image -->
+  <img src="/src/assets/images/main_Img/heroBgBottom.png" alt="Bottom Background" class="absolute bottom-0 left-0 w-full object-cover z-0">
+
+  <!-- Content -->
+  <div class="relative z-10 text-center px-4">
+    <h2 class="text-gray-700 text-lg md:text-xl font-medium mb-2">Automate. Integrate. Dominate.</h2>
+    <h1 class="text-3xl md:text-5xl font-bold text-[#0F2B59]">Future of</h1>
+    <h1 class="text-3xl md:text-5xl font-bold text-red-600 mb-4">Modern IT Technology is here</h1>
+    <p class="text-gray-600 max-w-2xl mx-auto text-sm md:text-base mb-8">
+      We are your one-for-all Business and Technology Consultants, offering customised, secure
+      solutions to suit your project needs.
+    </p>
+
+    <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+      <button class="group flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium px-6 py-2 rounded-full transition-colors duration-300">
+        Get in Touch now
+        <img
+          src="/src/assets/icons/arrorw.png"
+          alt="Arrow"
+          class="w-3 h-3 transition-transform duration-300 group-hover:rotate-45"
+        />
+      </button>
+      
+      
+
+      <button class="border border-gray-400 hover:border-gray-600 text-sm px-6 py-2 rounded-full text-black transition duration-300">
+        Any Query?
+      </button>
     </div>
+  </div>
 </section>
+
 <!-- Hero section ends here -->
 
 <!-- top clients section starts -->
@@ -378,9 +402,9 @@
 
   <div class="text-center mb-12">
     <p class="text-blue-800 font-semibold">Testimonials</p>
-    <h2 class="text-4xl font-bold">
+    <h2 class="text-4xl font-bold text-[#0F2B59]">
       See what people are<br>
-      <span class="text-blue-900">saying</span> <span class="text-red-600">about us</span>
+      <span class="">saying</span> <span class="text-red-600">about us</span>
     </h2>
   </div>
 
@@ -390,11 +414,11 @@
     <div class="w-full md:w-[300px] rounded-xl border border-gray-200 shadow-sm p-6">
       <!-- Stars -->
       <div class="flex text-orange-400 text-xl mb-4">
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
       </div>
       <!-- Text -->
       <p class="text-sm text-gray-700 mb-6">
@@ -407,31 +431,31 @@
       </div>
     </div>
 
-    <!-- Duplicate the card for 2 more -->
+  
     <div class="w-full md:w-[300px] rounded-xl border border-gray-200 shadow-sm p-6">
       <div class="flex text-orange-400 text-xl mb-4">
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
       </div>
       <p class="text-sm text-gray-700 mb-6">
         From day one, APRN has exceeded our expectations. Their tailored solutions perfectly align with our needs, helping us achieve our goals faster.
       </p>
       <div class="flex items-center gap-3">
-        <img src="https://i.imgur.com/0y0y0y0.png" alt="avatar" class="w-10 h-10 rounded-full border-2 border-blue-600" />
+        <img src="" alt="avatar" class="w-10 h-10 rounded-full border-2 border-blue-600" />
         <p class="font-semibold text-black drop-shadow-md">-David Brown, CFO</p>
       </div>
     </div>
 
     <div class="w-full md:w-[300px] rounded-xl border border-gray-200 shadow-sm p-6">
       <div class="flex text-orange-400 text-xl mb-4">
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
-        <img src="/src/assets/icons/star.png" alt="" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
+        <img src="/src/assets/icons/star.png" alt="star icon" class="w-5 h-5" />
       </div>
       <p class="text-sm text-gray-700 mb-6">
         From day one, APRN has exceeded our expectations. Their tailored solutions perfectly align with our needs, helping us achieve our goals faster.
