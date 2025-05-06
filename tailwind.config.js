@@ -2,7 +2,13 @@
  export default {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+      inter: ['Inter', 'sans-serif'],
+      cabin: ['Cabin', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
+    },
+  },
   },
   plugins: [],
 }
