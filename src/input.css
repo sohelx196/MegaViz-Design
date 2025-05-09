@@ -31,3 +31,41 @@
   font-weight: 600;
   font-size: 18.29px;
 }
+
+
+
+
+/* nav animation */
+
+  .nav-link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 30px;
+  }
+
+  .nav-link span {
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-link .top {
+    transform: translateY(0%);
+  }
+
+  .nav-link .bottom {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(0%);
+  }
+
+  .nav-link:hover .top {
+    transform: translateY(-100%);
+  }
+
+  .nav-link:hover .bottom {
+    transform: translateY(-100%);
+  }
+

@@ -11,33 +11,68 @@
 
 <body>
 <!-- Header starts here -->
-<header class="sticky top-0 z-50 bg-white p-4 flex items-center justify-around">
+<header class="sticky top-0 z-50 bg-white w-full">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
 
-    <!-- top logo  -->
-     <div>
-         <img src="/src/assets/images/megavizLogo.png" alt="megaviz logo" class="sm:w-15 sm:h-5 md:w-24 md:h-7 lg:w-40 lg:h-10 ">
-     </div>
-    <!-- top logo end  -->
+    <!-- Left section: Logo + Nav Links (on large screens) -->
+    <div class="flex items-center space-x-10 w-full lg:w-auto">
+      <!-- Logo -->
+      <img src="/src/assets/images/megavizLogo.png" alt="megaviz logo"
+        class="w-28 h-auto sm:w-20 sm:h-6 md:w-28 md:h-8 lg:w-36 lg:h-10" />
 
-
-    <!-- Navbar starts here -->
-    <nav class="poppins">
-        <ul class="flex ">
-            <li class="mx-4"><a href="#">Home</a></li>
-            <li class="mx-4"><a href="#">Capabilities</a></li>
-            <li class="mx-4"><a href="#">industries</a></li>
-            <li class="mx-4"><a href="#">About Us</a></li>
-            <li class="mx-4"><a href="#">Blogs</a></li>
-            <li class="mx-4"><a href="#">Case Studies</a></li>
-            <li class="mx-4"><a href="#">Career</a></li>
+      <!-- Nav Links (hidden on mobile) -->
+      <nav class="hidden lg:block">
+        <ul class="flex space-x-6 text-base">
+          <li><a href="#" class="nav-link"><span class="top">Home</span><span class="bottom">Home</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Capabilities</span><span class="bottom">Capabilities</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Industries</span><span class="bottom">Industries</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top"> Us</span><span class="bottom">About Us</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Blogs</span><span class="bottom">Blogs</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Case Studies</span><span class="bottom">Case Studies</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Career</span><span class="bottom">Career</span></a></li>
         </ul>
-    </nav>
-    <!-- Navbar ends here -->
-
-    <div>
-        <button class="poppins font-medium text-base border bg-red-600 text-white p-2 rounded-3xl px-5 hover:bg-transparent hover:text-black  hover:duration-700 hover:border-black ">Let's Talk</button>
+      </nav>
     </div>
+
+    <!-- CTA Button (hidden on mobile) -->
+    <div class="hidden lg:block">
+      <button
+        class="poppins font-medium text-base bg-red-600 text-white px-6 py-2 rounded-full border border-transparent hover:bg-transparent hover:text-black hover:border-black transition-all duration-300">
+        Let’s Talk
+      </button>
+    </div>
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="lg:hidden text-black focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="lg:hidden hidden px-6 pb-4">
+    <ul class="flex flex-col space-y-4 text-base">
+      <li><a href="#" class="nav-link"><span class="top">Home</span><span class="bottom">Home</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Capabilities</span><span class="bottom">Capabilities</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Industries</span><span class="bottom">Industries</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top"> Us</span><span class="bottom">About Us</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Blogs</span><span class="bottom">Blogs</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Case Studies</span><span class="bottom">Case Studies</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Career</span><span class="bottom">Career</span></a></li>
+      <li>
+        <button
+          class="poppins font-medium text-base bg-red-600 text-white px-6 py-2 rounded-full border border-transparent hover:bg-transparent hover:text-black hover:border-black transition-all duration-300 w-full">
+          Let’s Talk
+        </button>
+      </li>
+    </ul>
+  </div>
 </header>
+
+
+
 <!-- Header ends here -->
 
 
@@ -560,6 +595,14 @@
 </footer>
 
 <!-- Footer End -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
 
 </body>
 </html>
