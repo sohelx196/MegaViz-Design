@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .poppins{
   font-family: 'Poppins';
   font-style: normal;
@@ -70,8 +69,4 @@
   }
 
 
-
-
-
-
-
+/* nav animation end */
