@@ -70,3 +70,25 @@
 
 
 /* nav animation end */
+.nav-anim {
+  @apply relative inline-block text-black font-medium transition-all duration-300;
+}
+
+.nav-anim::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  color: #e60023; /* optional hover color */
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+.nav-anim:hover::before {
+  transform: translateY(-100%);
+}
+
+.nav-anim:hover {
+  color: transparent;
+}
