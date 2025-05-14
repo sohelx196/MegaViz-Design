@@ -7,7 +7,8 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../src/input.css">
 
 </head>
 <body>
@@ -19,16 +20,16 @@
 
     <div class="flex items-center space-x-10 w-full lg:w-auto">
       <!-- Logo -->
-      <img src="/src/assets/images/megavizLogo.png" alt="megaviz logo"
+      <img src="../src/assets/images/megavizLogo.png" alt="megaviz logo"
         class="w-28 h-auto sm:w-20 sm:h-6 md:w-28 md:h-8 lg:w-40 lg:h-10" />
 
       <!-- Nav Links (hidden on mobile) -->
       <nav class="hidden lg:block">
         <ul class="flex space-x-6 text-base">
-          <li><a href="/public/index.html" class="nav-link"><span class="top">Home</span><span class="bottom">Home</span></a></li>
+          <li><a href="/index.html" class="nav-link"><span class="top">Home</span><span class="bottom">Home</span></a></li>
           <li><a href="#" class="nav-link"><span class="top">Capabilities</span><span class="bottom">Capabilities</span></a></li>
           <li><a href="#" class="nav-link"><span class="top">Industries</span><span class="bottom">Industries</span></a></li>
-          <li><a href="/public/aboutUs.html" class="nav-link"><span class="top">About Us</span><span class="bottom">About Us</span></a></li>
+          <li><a href="../public/aboutUs.html" class="nav-link"><span class="top">About Us</span><span class="bottom">About Us</span></a></li>
           <li><a href="#" class="nav-link"><span class="top">Blogs</span><span class="bottom">Blogs</span></a></li>
           <li><a href="#" class="nav-link"><span class="top">Case Studies</span><span class="bottom">Case Studies</span></a></li>
           <li><a href="#" class="nav-link"><span class="top">Career</span><span class="bottom">Career</span></a></li>
@@ -54,8 +55,8 @@
   </div>
 
   <!-- Mobile Dropdown Menu -->
-  <!-- <div id="mobile-menu" class="lg:hidden hidden px-6 pb-4">
-    <ul class="flex flex-col space-y-4 text-base ">
+  <div id="mobile-menu" class="lg:hidden hidden px-6 pb-4">
+    <ul class="flex flex-col space-y-4 text-base items-center">
       <li><a href="#" class="nav-link"><span class="top">Home</span><span class="bottom">Home</span></a></li>
       <li><a href="#" class="nav-link"><span class="top">Capabilities</span><span class="bottom">Capabilities</span></a></li>
       <li><a href="#" class="nav-link"><span class="top">Industries</span><span class="bottom">Industries</span></a></li>
@@ -63,14 +64,14 @@
       <li><a href="#" class="nav-link"><span class="top">Blogs</span><span class="bottom">Blogs</span></a></li>
       <li><a href="#" class="nav-link"><span class="top">Case Studies</span><span class="bottom">Case Studies</span></a></li>
       <li><a href="#" class="nav-link"><span class="top">Career</span><span class="bottom">Career</span></a></li>
-      <li>
+      <li>  
         <button
           class="poppins font-medium text-base bg-red-600 text-white px-6 py-2 rounded-full border border-transparent hover:bg-transparent hover:text-black hover:border-black transition-all duration-300 w-full">
           Let’s Talk 
         </button>
       </li>
     </ul>
-  </div> -->
+  </div>
 </header>
 
 <!-- Header ends here -->
@@ -86,11 +87,15 @@
     </p>
     <button class="mt-8 bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300">
       Contact Us
+       <img
+          src="../src/assets/icons/arrorw.png"
+          alt="Arrow"
+          class="w-3 h-3 transition-transform duration-300 group-hover:rotate-45"/>
     </button>
   </div>
 
   <div class="relative flex justify-center items-center px-4 md:px-0">
-    <img src="/src/assets/images/AboutUs/student.png" alt="Team Meeting" class="rounded-2xl shadow-lg w-full max-w-4xl">
+    <img src="../src/assets/images/AboutUs/student.png" alt="Team Meeting" class="rounded-2xl shadow-lg w-full max-w-4xl">
 
     <div class="absolute top-4 left-4 bg-white rounded-xl shadow-lg px-4 py-3 text-left">
       <p class="text-xs text-gray-500 font-semibold">GREAT PROJECT</p>
@@ -99,7 +104,7 @@
 
     <div class="absolute bottom-4 right-4 bg-white rounded-xl shadow-lg px-4 py-3 max-w-xs text-left">
       <div class="flex items-center space-x-2 mb-2">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Bill Adams" class="w-8 h-8 rounded-full">
+        <img src="../src/assets/images/AboutUs/person1.png" alt="Bill Adams" class="w-8 h-8 rounded-full">
         <div>
           <p class="text-sm font-semibold">Bill Adams</p>
           <p class="text-xs text-gray-500">CEO, Vivenza</p>
