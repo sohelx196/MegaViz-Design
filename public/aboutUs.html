@@ -82,7 +82,7 @@
    <h1 class="text-[#102E52] text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 md:mb-8">
       Welcome To <span class="text-[#C72C28]">MegaViz</span>
     </h1>
-    <p class="cabin text-[#696969] mt-4 max-w-3xl mx-auto text-sm sm:text-base">
+    <p class="cabin text-[#696969] mt-4 max-w-3xl mx-auto text-sm sm:text-base ">
       We provide quality of services to its Clients like Web Application, Digital Marketing (SEO, SMO, SEM, SMM, Email Marketing), Mobile App Development, Graphic Designing Services, UI/UX, Research & Development & Management Products in Hyderabad.
     </p>
 
@@ -233,7 +233,7 @@
 
 
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 py-7">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4 py-4">
   
   <!-- Left Card -->
   <div class="hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer cabin relative h-[260px] sm:h-[280px] lg:h-[280px] w-[90%] mx-auto rounded-xl overflow-hidden group flex items-end">
@@ -297,8 +297,7 @@
 
   <!-- Paragraph -->
 <p class="cabin text-base sm:text-lg  text-[#878C91] leading-relaxed 
-           text-left sm:text-justify lg:text-left 
-           max-w-screen-md mx-auto px-4 sm:px-6 lg:px-0">
+           text-left sm:text-justify lg:text-left max-w-screen-md mx-auto px-4 sm:px-6 lg:px-0">
     Megaviz is the main supplier in IT Development, Software Development, creative Mobile applications Development,
     web index showcasing and advancement administrations. Our essential subject matters incorporate site improvement
     (SEO), on page streamlining, search-accommodating web advancement, informal communication and third party referencing.
@@ -362,15 +361,11 @@
   </div>
 
   <!-- play icon  -->
-  <img 
-  src="../src/assets/images/AboutUs/playIcon.png" 
-  alt="play icon" 
-  class="absolute  bottom-1 right-1 w-12 h-12 sm:w-18 sm:h-18 md:w-28 md:h-28 
-         lg:w-h-28 lg:h-28 xl:w-32 xl:h-32 object-contain z-10" />
-
-</div>
-
-
+<img src="../src/assets/images/AboutUs/playIcon.png" alt="play icon" 
+  class="absolute bottom-1 right-1 sm:bottom-2 sm:right-2 
+         md:bottom-3 md:right-3 lg:-bottom-1 lg:-right-2
+         w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-28 lg:h-28 xl:w-32 xl:h-32 
+         object-contain z-10" />
 
     </div>
 
@@ -383,31 +378,45 @@
 
 <!-- vision mission card start -->
  
-<section class="px-4 py-12 sm:py-16 lg:py-24 bg-white">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+<section class="px-4 py-10 sm:py-14 lg:py-20 bg-white">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-5">
     
     <!-- Vision Card -->
-    <div class="bg-[#FFEABF] rounded-xl p-6 flex flex-col justify-between shadow-md ">
-      <div>
-        <h3 class="text-2xl font-bold text-gray-800 mb-3">Our Vision</h3>
-        <p class="text-gray-800 text-sm sm:text-base leading-relaxed">
-          An Individual Character And Arise As A Regarded Programming Arrangements Supplier By Building And
-          Keeping Up Durable Connections, Conveying Quality Programming And By Giving Inventive Business Arrangements...
-        </p>
-      </div>
-      <div class="mt-6 flex justify-center">
-        <img src="../src/assets/images/AboutUs/ourVision.png" alt="Vision" class="w-full max-w-xs object-contain" />
-      </div>
-    </div>
+   <div class="bg-[#FEEFC1] rounded-xl p-6 sm:p-8 flex flex-col justify-start items-center shadow-md max-w-md mx-auto hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer">
+  
+  <!-- Text Content -->
+  <div class="w-full text-start">
+    <h3 class="cabin text-2xl sm:text-3xl md:text-4xl font-bold text-[#323131] mb-4">
+      Our Vision
+    </h3>
+    <p class="cabin text-[#323131] text-sm sm:text-base md:text-[17px] leading-relaxed sm:leading-[1.8rem] max-w-prose text-justify">
+      An individual character and arise as a regarded programming arrangements supplier by building and
+      maintaining durable connections, delivering quality software, and by providing innovative business solutions
+      tailored to client needs...
+    </p>
+  </div>
+
+  <!-- Image -->
+  <div class="flex justify-center mt-5 sm:mt-6">
+    <img src="../src/assets/images/AboutUs/ourVision.png" alt="Vision"
+         class="w-full max-w-[320px] sm:max-w-[360px] object-contain" />
+  </div>
+  
+</div>
+
+
+
 
     <!-- Mission Card -->
-    <div class="bg-[#F0E6FF] rounded-xl p-6 flex flex-col justify-between shadow-md">
-      <div class="flex justify-center mb-6">
-        <img src="../src/assets/images/AboutUs/ourMission.png" alt="Mission" class="w-full max-w-xs object-contain" />
-      </div>
-      <div>
-        <h3 class="text-2xl font-bold text-gray-800 mb-3">Our Mission</h3>
-        <p class="text-gray-800 text-sm sm:text-base leading-relaxed">
+    <div class=" hover:shadow-lg hover:shadow-black transition-all duration-500 cursor-pointer bg-[#EBE2F2] rounded-xl p-6 sm:p-8 flex flex-col justify-start items-center shadow-md max-w-md mx-auto">
+   <div class="flex justify-center mb-4 sm:mb-6">
+  <img src="../src/assets/images/AboutUs/ourMission.png" alt="Mission"
+       class="w-full max-w-[320px] sm:max-w-[360px] object-contain" />
+</div>
+
+      <div class="w-full">
+        <h3 class="cabin text-2xl sm:text-3xl md:text-4xl font-bold text-[#323131] mb-4">Our Mission</h3>
+        <p class="cabin text-[#323131] text-sm sm:text-base md:text-[17px] leading-relaxed sm:leading-[1.8rem] max-w-prose text-justify">
           To Give Inventive, High Calibre And Top Tier IT Consulting & IT Solutions & Services To Our Clients,
           Empowering Them To Accomplish Their Business Destinations. Partners And Accomplices While Co-Operating.
           Also, To Keep Up And Grow Our Convention Of "Greatness Through Quality".
@@ -417,6 +426,8 @@
 
   </div>
 </section>
+
+
 
 
 <!-- vision mission card end -->
