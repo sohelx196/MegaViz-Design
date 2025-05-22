@@ -4,8 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+
+
+      <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../src/input.css">
+
 </head>
 <body>
-    <h1>contact us</h1>
+    
+    
+<!-- Header start -->
+
+<header class=" sticky top-0 z-50 bg-white w-full">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+
+    <div class="flex items-center space-x-10 w-full lg:w-auto">
+      <!-- Logo -->
+      <img src="../src/assets/images/megavizLogo.png" alt="megaviz logo"
+        class="w-28 h-auto sm:w-20 sm:h-6 md:w-28 md:h-8 lg:w-40 lg:h-10" />
+
+      <!-- Nav Links (hidden on mobile) -->
+      <nav class="hidden lg:block">
+        <ul class="flex space-x-6 text-base">
+          <li><a href="../index.html" class="nav-link"><span class="top">Home</span><span class="bottom">Home</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Capabilities</span><span class="bottom">Capabilities</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Industries</span><span class="bottom">Industries</span></a></li>
+          <li><a href="../public/aboutUs.html" class="nav-link"><span class="top">About Us</span><span class="bottom">About Us</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Blogs</span><span class="bottom">Blogs</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Case Studies</span><span class="bottom">Case Studies</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Career</span><span class="bottom">Career</span></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- CTA Button (hidden on mobile) -->
+    <div class="hidden lg:block">
+      <button
+        class="poppins font-medium text-base bg-red-600 text-white px-6 py-2 rounded-full border border-transparent hover:bg-transparent hover:text-black hover:border-black transition-all duration-300">
+        Let’s Talk
+      </button>
+    </div>
+
+    <!-- Hamburger Menu Button -->
+       <button id="menu-btn" class="lg:hidden text-black focus:outline-none">
+    <img src="../src/assets/icons/hamburger.png" alt="" class="w-6 h-4 text-black">
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="lg:hidden hidden px-6 pb-4">
+    <ul class="flex flex-col space-y-4 text-base items-center">
+      <li><a href="../index.html" class="nav-link"><span class="top">Home</span><span class="bottom">Home</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Capabilities</span><span class="bottom">Capabilities</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Industries</span><span class="bottom">Industries</span></a></li>
+      <li><a href="../public/aboutUs.html" class="nav-link"><span class="top">About Us</span><span class="bottom">About Us</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Blogs</span><span class="bottom">Blogs</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Case Studies</span><span class="bottom">Case Studies</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Career</span><span class="bottom">Career</span></a></li>
+      <li>  
+        <button
+          class="poppins font-medium text-base bg-red-600 text-white px-6 py-2 rounded-full border border-transparent hover:bg-transparent hover:text-black hover:border-black transition-all duration-300 w-full">
+          Let’s Talk 
+        </button>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!-- Header end -->
+
+
+<!-- Contact form start  -->
+ 
+
+
+<!-- Contact form end -->
+
+
+
+
+
+
+<!-- Script of dropdown -->
+<script>
+  const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('mobile-menu');
+
+btn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+</script>
+
+
 </body>
 </html>
