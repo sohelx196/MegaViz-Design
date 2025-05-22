@@ -6,7 +6,8 @@
     <title>About Us</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="../src/input.css">
 
@@ -285,52 +286,91 @@
 
 
     <!-- ABOUT US TEXT SECTION -->
-    <div class="flex flex-col lg:flex-row items-start gap-4 lg:gap-8 px-4">
-      
-      <!-- Heading -->
-      <h2 class="cabin text-3xl sm:text-5xl font-bold text-[#102E52] lg:w-1/3">
-        About Us
-      </h2>
+<div class="flex flex-col lg:flex-row items-start gap-4 lg:gap-8 px-4">
+  
+  <!-- Heading -->
+  <h2 class="cabin text-2xl sm:text-4xl md:text-5xl font-bold text-[#102E52] 
+            whitespace-nowrap w-full sm:w-auto text-center sm:text-left px-4 self-center">
+  About Us
+</h2>
 
-      <!-- Paragraph -->
-      <p class="cabin text-sm sm:text-base text-gray-700 leading-relaxed lg:w-2/3">
-        Megaviz is the main supplier in IT Development, Software Development, creative Mobile applications Development,
-        web index showcasing and advancement administrations. Our essential subject matters incorporate site improvement
-        (SEO), on page streamlining, search-accommodating web advancement, informal communication and third party referencing.
-        We separate ourselves in our steady capacity to stay up with the changing requests of the business. Megaviz have gone
-        from little new businesses to huge organizations making significant degrees of progress with every customer.
-      </p>
 
-    </div>
+  <!-- Paragraph -->
+<p class="cabin text-base sm:text-lg  text-[#878C91] leading-relaxed 
+           text-left sm:text-justify lg:text-left 
+           max-w-screen-md mx-auto px-4 sm:px-6 lg:px-0">
+    Megaviz is the main supplier in IT Development, Software Development, creative Mobile applications Development,
+    web index showcasing and advancement administrations. Our essential subject matters incorporate site improvement
+    (SEO), on page streamlining, search-accommodating web advancement, informal communication and third party referencing.
+    We separate ourselves in our steady capacity to stay up with the changing requests of the business. Megaviz have gone
+    from little new businesses to huge organizations making significant degrees of progress with every customer.
+  </p>
+
+</div>
+
 
     <!-- CARDS SECTION -->
     <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 px-4 items-stretch">
       
       <!-- Stat Card -->
-      <div class="lg:col-span-2 bg-gradient-to-br from-black to-gray-900 text-white rounded-2xl p-6 flex flex-col justify-between shadow-lg min-h-[250px]">
-        <div>
-          <h3 class="text-4xl font-bold">920<span class="text-red-500">+</span></h3>
-          <p class="mt-2 text-sm text-gray-300">Project finish with superbly</p>
-        </div>
-        <div>
-          <img src="../src/assets/images/AboutUs/cardImg.png" class="mt-6 h-10 object-contain" />
-        </div>
-      </div>
+<div class="lg:col-span-2 relative text-white rounded-2xl shadow-lg min-h-[250px] overflow-hidden flex flex-col justify-between p-6 bg-black">
+  
+  <!-- Rotated and Transparent Background Image -->
+  <div class="absolute inset-0 z-0">
+    <img src="../src/assets/images/AboutUs/projectFinish1.png"
+         alt="Background"
+         class="w-full h-full object-cover opacity-3 rotate-[6deg] scale-110" />
+  </div>
+
+  <!-- Content Layer -->
+  <div class="relative z-10">
+    <h3 class="Jakarta text-4xl sm:text-5xl md:text-6xl lg:text-[84px] font-bold leading-tight">
+      920<span class="text-[#C72C28] text-xl sm:text-2xl md:text-3xl lg:text-6xl font-extrabold">+</span>
+    </h3>
+    <p class="Jakarta mt-2 text-xs sm:text-sm md:text-base text-gray-300">
+      Project finish with superbly
+    </p>
+  </div>
+
+  <!-- Bottom-right People Icon -->
+  <div class="absolute bottom-4  z-10">
+    <img src="../src/assets/images/AboutUs/cardImg.png"
+         alt="Card Icon"
+         class="h-8 sm:h-10 md:h-12 object-contain" />
+  </div>
+</div>
+
+
 
       <!-- Image Card -->
-      <div class="lg:col-span-3 relative rounded-2xl overflow-hidden shadow-lg">
-        <img src="../src/assets/images/AboutUs/howWeWork.png" alt="How We Work" class="w-full h-full object-cover" />
-        
-      
-        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
-          <h3 class="text-white text-2xl sm:text-3xl font-semibold tracking-wide">HOW WE WORK</h3>
-        </div>
+<div class="lg:col-span-3 relative overflow-hidden rounded-2xl bg-black">
+  
+  <!-- Main Image -->
+  <div class="aspect-video w-full h-auto">
+    <img 
+      src="../src/assets/images/AboutUs/howWeWork.png" 
+      alt="How We Work" 
+      class="w-full h-full object-cover block"
+    />
+  </div>
 
-        <!-- Play Button -->
-        <div class="absolute bottom-6 right-6 w-16 h-16 sm:w-20 sm:h-20 bg-[#C72C28] border-[8px] border-white rounded-full flex items-center justify-center shadow-md">
-          <img src="../src/assets/images/AboutUs/playIcon.png" alt="play icon" class="w-6 h-6 sm:w-7 sm:h-7" />
-        </div>
-      </div>
+  <!-- Overlay Title -->
+  <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+    <h3 class="Jakarta text-white text-2xl sm:text-4xl font-semibold tracking-widest">
+      HOW WE WORK
+    </h3>
+  </div>
+
+  <!-- play icon  -->
+  <img 
+  src="../src/assets/images/AboutUs/playIcon.png" 
+  alt="play icon" 
+  class="absolute  bottom-1 right-1 w-12 h-12 sm:w-18 sm:h-18 md:w-28 md:h-28 
+         lg:w-h-28 lg:h-28 xl:w-32 xl:h-32 object-contain z-10" />
+
+</div>
+
+
 
     </div>
 

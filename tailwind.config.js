@@ -7,6 +7,7 @@ export default {
       inter: ['Inter', 'sans-serif'],
       cabin: ['Cabin', 'sans-serif'],
       poppins: ['Poppins', 'sans-serif'],
+      jakarta: ['"Plus Jakarta Sans"', 'sans-serif'],
     },
      },
    },
