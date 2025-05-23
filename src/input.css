@@ -22,8 +22,10 @@
 
 .cabin{
   font-family: 'Cabin', sans-serif;
-  line-height: 100%; 
-}
+  font-weight: 400;
+  line-height: 100%;
+} 
+
 .cabin2{
   font-family: 'Cabin', sans-serif;
   font-style: normal;

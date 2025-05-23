@@ -7,7 +7,8 @@
 
 
       <script src="https://cdn.tailwindcss.com"></script>
-   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="../src/input.css">
@@ -83,54 +84,67 @@
 <section class="px-4 py-12 sm:py-16 lg:py-20 max-w-7xl mx-auto">
   <!-- Heading -->
   <div class="mb-12 text-center lg:text-left lg:flex lg:justify-between lg:items-start">
-    <div>
-      <p class="cabin text-[#C72C28] text-base font-semibold mb-3">Get Started</p>
-      <h2 class="cabin text-[28px] sm:text-[36px] lg:text-[48px] font-bold leading-tight text-[#102E52]">
-        <span class="text-[#C72C28]">Get in touch</span> with us. We’re here to<br class="hidden sm:block" />
-        assist you.
-      </h2>
-    </div>
-    
-    <!-- Social Icons -->
-    <div class="hidden lg:flex flex-col gap-4">
-      <a href="#" class="border border-[#0A2342] rounded-full p-2 text-red-600 h-10 w-10">
-        <img src="/src/assets/icons/facebook.png" alt="">
-      </a>
-      <a href="#" class="border border-[#0A2342] rounded-full p-2 text-red-600 h-10 w-10">
-        <img src="/src/assets/icons/instagram.png" alt="">
-      </a>
-      <a href="#" class="border border-[#0A2342] rounded-full p-2 text-red-600 h-10 w-10">
-        <img src="/src/assets/icons/twitter.png" alt=""> 
-      </a>
-    </div>
+<div class="max-w-4xl">
+  <p class="cabin text-[#C72C28] text-base font-semibold mb-3">Get Started</p>
+  <h2 class="cabin font-bold text-[#102E52] text-[28px] sm:text-[36px] lg:text-[48px] leading-tight">
+    <span class="text-[#C72C28]">Get in touch</span> with us. We’re here to
+  </h2>
+  <h2 class="cabin font-bold text-[#102E52] text-[28px] sm:text-[36px] lg:text-[48px] leading-tight">
+    assist you.
+  </h2>
+</div>
+
+
+<!-- Social Icons-->
+<div class="flex lg:flex-col flex-row items-center lg:items-start gap-3 mt-6 lg:mt-0 justify-center">
+  <!-- Facebook -->
+  <a href="#" class="border border-[#102E52] rounded-full flex items-center justify-center 
+                     w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10">
+    <img src="/src/assets/icons/facebook.png" alt="Facebook" class="w-3 sm:w-4 lg:w-5 h-auto" />
+  </a>
+
+  <!-- Instagram -->
+  <a href="#" class="border border-[#102E52] rounded-full flex items-center justify-center 
+                     w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10">
+    <img src="/src/assets/icons/instagram.png" alt="Instagram" class="w-3 sm:w-4 lg:w-5 h-auto" />
+  </a>
+
+  <!-- Twitter -->
+  <a href="#" class="border border-[#102E52] rounded-full flex items-center justify-center 
+                     w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10">
+    <img src="/src/assets/icons/twitter.png" alt="Twitter" class="w-3 sm:w-4 lg:w-5 h-auto" />
+  </a>
+</div>
+
+
+
   </div>
 
   <!-- Form -->
   <form class="space-y-8">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div>
-        <label class="cabin block text-sm font-medium text-gray-900 mb-1">Your Name</label>
+        <label class="cabin block text-sm font-normal  mb-1">Your Name</label>
         <input type="text" placeholder=""
                class="w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2" />
       </div>
 
       <div>
-        <label class="cabin block text-sm font-medium text-gray-900 mb-1">Email Address</label>
+        <label class="cabin block text-sm font-normal  mb-1">Email Address</label>
         <input type="email" placeholder=""
                class="w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2" />
       </div>
 
       <div>
-        <label class="cabin block text-sm font-medium text-gray-900 mb-1">Phone Number (optional)</label>
+        <label class="cabin block text-sm font-normal  mb-1">Phone Number (optional)</label>
         <input type="text" placeholder=""
                class="w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2" />
       </div>
     </div>
 
     <div>
-      <label class="cabin block text-sm font-medium text-gray-900 mb-1">Message</label>
-      <textarea rows="4" placeholder=""
-                class="w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2 resize-none"></textarea>
+      <label class="cabin block text-sm font-normal  mb-1">Message</label>
+      <textarea rows="3" placeholder="" class="w-full border-b border-gray-300 focus:outline-none focus:border-red-500 py-2 resize-none"></textarea>
     </div>
 
     <div>
