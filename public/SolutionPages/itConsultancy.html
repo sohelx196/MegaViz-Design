@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" =device-width, initial-scale=1.0">
+    <title>IT Consultancy</title>
+
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../dist/output.css">
+    <link rel="stylesheet" href="../../src/input.css">
+ 
+
+</head>
+<body>
+      
+<!-- header start -->
+
+<header class=" sticky top-0 z-50 bg-white w-full">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+
+    <div class="flex items-center space-x-10 w-full lg:w-auto">
+      <!-- Logo -->
+      <img src="../../src/assets/images/megavizLogo.png" alt="megaviz logo"
+        class="w-28 h-auto sm:w-20 sm:h-6 md:w-28 md:h-8 lg:w-40 lg:h-10" />
+
+      <!-- Nav Links (hidden on mobile) -->
+      <nav class="hidden lg:block">
+        <ul class="flex space-x-6 text-base">
+          <li><a href="../../index.html" class="nav-link"><span class="top">Home</span><span class="bottom">Home</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Capabilities</span><span class="bottom">Capabilities</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Industries</span><span class="bottom">Industries</span></a></li>
+          <li><a href="../../public/aboutUs.html" class="nav-link"><span class="top">About Us</span><span class="bottom">About Us</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Blogs</span><span class="bottom">Blogs</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Case Studies</span><span class="bottom">Case Studies</span></a></li>
+          <li><a href="#" class="nav-link"><span class="top">Career</span><span class="bottom">Career</span></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- CTA Button (hidden on mobile) -->
+    <div class="hidden lg:block">
+      <button
+        class="poppins font-medium text-base bg-red-600 text-white px-6 py-2 rounded-full border border-transparent hover:bg-transparent hover:text-black hover:border-black transition-all duration-300">
+        Let’s Talk
+      </button>
+    </div>
+
+    <!-- Hamburger Menu Button -->
+       <button id="menu-btn" class="lg:hidden text-black focus:outline-none">
+    <img src="../../src/assets/icons/hamburger.png" alt="" class="w-6 h-4 text-black">
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="lg:hidden hidden px-6 pb-4">
+    <ul class="flex flex-col space-y-4 text-base items-center">
+      <li><a href="../../index.html" class="nav-link"><span class="top">Home</span><span class="bottom">Home</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Capabilities</span><span class="bottom">Capabilities</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Industries</span><span class="bottom">Industries</span></a></li>
+      <li><a href="../../public/aboutUs.html" class="nav-link"><span class="top">About Us</span><span class="bottom">About Us</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Blogs</span><span class="bottom">Blogs</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Case Studies</span><span class="bottom">Case Studies</span></a></li>
+      <li><a href="#" class="nav-link"><span class="top">Career</span><span class="bottom">Career</span></a></li>
+      <li>  
+        <button
+          class="poppins font-medium text-base bg-red-600 text-white px-6 py-2 rounded-full border border-transparent hover:bg-transparent hover:text-black hover:border-black transition-all duration-300 w-full">
+          Let’s Talk 
+        </button>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!-- header end -->
+
+
+
+
+<!-- Main Page start-->
+
+ <section class="w-full bg-white px-4 md:px-8 py-16 flex justify-center relative">
+  
+  <!-- Dot Pattern Top Right (absolute to section) -->
+  <img src="../../src/assets/images/ExtraItSollution/backDots.png" alt="Dot Pattern"
+       class="absolute top-4 right-4 w-24 md:w-36 z-20 pointer-events-none" />
+
+  <div class="max-w-7xl w-full flex flex-col md:flex-row overflow-hidden rounded-2xl shadow-lg relative z-10">
+
+    <!-- Red Text Box -->
+    <div class="bg-[#C72C28] text-white p-6 md:p-10 flex flex-col justify-center rounded-2xl md:rounded-r-none md:rounded-l-2xl w-full md:w-1/2 relative z-10  md:h-auto min-h-[200px]">
+      <h2 class="cabin text-2xl md:text-3xl font-bold mb-4">IT Consultancy</h2>
+      <p class="cabin text-[#FFFAFA] mb-4 text-sm md:text-base">
+        You deserve the best possible results from your information technology (IT). But when it comes to IT, many business owners don't know where to start.
+        This is why we offer a complete IT assessment absolutely free with no strings attached. Find out exactly how to improve the efficiency and security of your business IT network.
+      </p>
+      <p class="cabin text-[#FFFAFA] text-sm md:text-base">
+        MegaViz’s technology consultants advise businesses on how best to use technology and offer services to accomplish that mission. Our experienced staff can assess your IT infrastructure and the health of your system. We work with you to evaluate and understand your priorities and business parameters.
+        We then propose the best solutions to match your goals, resources and technology investment.
+      </p>
+    </div>
+
+    <!-- Main Image -->
+    <div class="w-full md:w-1/2 relative">
+      <img src="../../src/assets/images/ExtraItSollution/itConsultancyMain.jpg" alt="Team Working"
+           class="w-full h-full object-cover rounded-bl-2xl md:rounded-bl-2xl md:rounded-br-2xl md:rounded-tl-2xl" />
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- Main Page end -->
+
+
+
+
+
+
+
+
+<!-- Script of dropdown -->
+<script>
+  const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('mobile-menu');
+
+btn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+</script>
+
+</body>
+</html>
